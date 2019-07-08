@@ -1,0 +1,8 @@
+<h3>Hungry Dinos.  Feed them!</h3>
+<a href="/dinosaurs/new">Death wish?</a>
+<ul>
+    <% dinosaurs.forEach(function (dino) { %>
+        <li> <a href="/dinosaurs/<%= dino.id %>"><%= dino.name %></a></li>
+    <% }); %>
+
+</ul>
